@@ -2,5 +2,6 @@
   "ver": 1,
   "pascal_ide": "Pascal N-IDE",
   "author": "Tran Trong Hoa",
-  "github": "https://github.com/hexzzz2008"
+  "github": "https://github.com/hexzzz2008",
+  "PHP_ver": "8.1.6"
 }
