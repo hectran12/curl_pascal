@@ -41,5 +41,5 @@ function format_result ($code) {
     foreach ($code as $name => $value) {
         $str .= $name . "|" . encode($value) . ",";
     }
-    return $str;
+    return substr($str, 0, -1);
 }
