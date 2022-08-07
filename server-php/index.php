@@ -158,7 +158,13 @@ if (isset($_GET["server"]) == "on") {
         $return = $_GET["return"];
         $url = $_GET["url"];
         $header = isset($_GET["headers"]) ? $_GET["headers"] : false;
-
+        $method = $method[strlen($method)-1] == ',' ? substr($method, 0, -1) : $method;
+        $prot = $prot[strlen($prot)-1] == ',' ? substr($prot, 0, -1) : $prot;
+        $return = $return[strlen($return)-1] == ',' ? substr($return, 0, -1) : $return;
+        $url = $url[strlen($url)-1] == ',' ? substr($url, 0, -1) : $url;
+        if ($header) {
+            $header = $header[strlen($header)-1] == ',' ? substr($header, 0, -1) : $header;
+        }
         $code = "";
         try {
             if(strpos($prot, "|")) {
