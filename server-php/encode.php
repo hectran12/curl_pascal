@@ -94,7 +94,8 @@
     $charactes["="] = "Kju";
     $charactes[" "] = "Lkh";
     $charactes[":"] = "Awv";
-    
+    $charactes['|'] = 'Tra';
+
     function encode($text) {
         global $charactes;
         $result = '';
