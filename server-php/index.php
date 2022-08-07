@@ -163,7 +163,7 @@ if (isset($_GET["server"]) == "on") {
         $return = decode($return[strlen($return)-1] == ',' ? substr($return, 0, -1) : $return);
         $url = decode($url[strlen($url)-1] == ',' ? substr($url, 0, -1) : $url);
         if ($header) {
-            $header = decode($header[strlen($header)-1] == ',' ? substr($header, 0, -1) : $header;);
+            $header = decode($header[strlen($header)-1] == ',' ? substr($header, 0, -1) : $header);
         }
       
         $code = "";
