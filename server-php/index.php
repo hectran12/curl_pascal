@@ -160,6 +160,7 @@ if (isset($_GET["server"]) == "on") {
         $url = $_GET["url"];
         $header = isset($_GET["headers"]) ? decode($_GET["headers"]) : false;
         // split <hex> from end stirng
+        $method = decode($method);
         $prot = left_explode(decode($prot), '-hex3335-');
         $return = left_explode(decode($return), '-hex3335-');
         $url = decode($url);
@@ -201,7 +202,7 @@ if (isset($_GET["server"]) == "on") {
                         foreach ($checkTags as $name => $value) {
                             returnAdd($code, $name, $value);
                         }
-                        
+                        //fwrite(fopen("test.php","w+"),'<?php '. $code);
                         echo format_result(eval_code($code));
                     }
                 } else {
