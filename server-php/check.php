@@ -22,7 +22,7 @@
 
     function checkHeader ($header) {
         $arr = explode("-hex3335-", $header);
-        if (count($arr) > 1) {
+        if (count($arr) > 0) {
             return $arr;
         } else {
             return false;
