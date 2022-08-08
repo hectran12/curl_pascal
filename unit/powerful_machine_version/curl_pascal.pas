@@ -293,7 +293,7 @@ end;
     result_split := encry(self.headers+'','encode');
     url := url + '&headers=' + result_split;
     result_split := getContentHtml(url);
-    write(result_split);
+    
     if result_split = '' then begin
       exect.content := 'Cannot request';
       exect.pson := 'base69';
